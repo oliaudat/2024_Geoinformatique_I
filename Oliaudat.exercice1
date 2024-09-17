@@ -1,0 +1,320 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/oliaudat/2024_Geoinformatique_I/blob/main/Oliaudat.exercice1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "a4H9Gb41nLo-"
+      },
+      "source": [
+        "## Exercice 1 - Introduction aux bases de la programmation"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "G79m62HcnLo_"
+      },
+      "source": [
+        "### Premier code de Python :\n",
+        "\n",
+        "Utiliser la fonction \"print()\" pour afficher le texte \"Hello world\"."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 8,
+      "metadata": {
+        "id": "6acDX_-_nLpC",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "9d2b53d2-801d-4149-dc7c-a66cc76b7263"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello world\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Premier script : \"Hello world\"\n",
+        "print(\"Hello world\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "u8mSrLqxnLpE"
+      },
+      "source": [
+        "### Variables et types de données :\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "id": "QBu-r7EFnLpF"
+      },
+      "outputs": [],
+      "source": [
+        "# Initialiser des données\n",
+        "\n",
+        "x = 2    # Remplacer par une valeur entière (integer)\n",
+        "y = 1.3    # Remplacer par une valeur décimale (float)\n",
+        "z = \"Cobra\"  # Remplacer par une chaîne de caractères. Par exemple \"Python\""
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "PJc99DALnLpG"
+      },
+      "source": [
+        "Maintenant vérifions le type de ces variables à l'aide de la fonction \"type()\""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "id": "WDrvtjv2nLpG",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e21c4102-b1d7-4c57-da60-7e29a0e3e43d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'str'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Comment vérifier le type ?\n",
+        "print(type(x))  # Affiche le type de x\n",
+        "print(type(y))  # Affiche le type de y\n",
+        "print(type(z))  # Affiche le type de z"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "T1V0f27onLpH"
+      },
+      "source": [
+        "### Opérations arithmétiques :"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "id": "iXXDA3-JnLpI"
+      },
+      "outputs": [],
+      "source": [
+        "a = 20  # Remplacer par une valeur entière\n",
+        "b = 5  # Remplacer par une valeur entière"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 10,
+      "metadata": {
+        "id": "Is2kTg-7nLpI"
+      },
+      "outputs": [],
+      "source": [
+        "# Opérations arithmétiques\n",
+        "addition = a + b  # Calcul de l'addition\n",
+        "soustraction = a - b  # Calcul de la soustraction entre a et b\n",
+        "multiplication = a*b  # Calcul de la multiplication entre a et b\n",
+        "division = a/b  # Calcul de la division de a par b"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 13,
+      "metadata": {
+        "id": "n7_BQYBanLpJ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "70aba69d-5a24-4476-f776-ba83da831de0"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Addition: 25\n",
+            "Soustraction: 15\n",
+            "Multiplication: 100\n",
+            "Division: 4.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Afficher les résultats\n",
+        "print(\"Addition:\", a + b)\n",
+        "print(\"Soustraction:\", a - b)\n",
+        "print(\"Multiplication:\", a*b)\n",
+        "print(\"Division:\", a/b)\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "VXsb00dpnLpJ"
+      },
+      "source": [
+        "### Calcul d'émissions de CO2 :"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 14,
+      "metadata": {
+        "id": "o-v8FPXOnLpJ"
+      },
+      "outputs": [],
+      "source": [
+        "# Données\n",
+        "distance_km = 20  # Distance parcourue en kilomètres\n",
+        "consommation_essence_litres_km = 3  # Consommation d'essence en litres par km"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 21,
+      "metadata": {
+        "id": "WvCqQV44nLpK"
+      },
+      "outputs": [],
+      "source": [
+        "# Calcul des émissions de CO2 en kilogrammes\n",
+        "# Le facteur 2,3 est une estimation générale de la quantité de dioxyde de carbone (CO2) émise en kilogrammes par litre de carburant brûlé.\n",
+        "# Il est utilisé pour convertir la consommation d'essence en émissions de CO2.\n",
+        "emissions_CO2_kg = (distance_km * consommation_essence_litres_km) * 2.3"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 17,
+      "metadata": {
+        "id": "bGnGt39ynLpK",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "030cd62c-c5ac-4566-8fc4-3d03f842232f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Les émissions de CO2 pour 20 km parcourus sont de 138.0 grammes.\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Afficher le résultat\n",
+        "print(\"Les émissions de CO2 pour\", 20, \"km parcourus sont de\", emissions_CO2_kg, \"grammes.\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "q-bZszADnLpK"
+      },
+      "source": [
+        "### Calcul de la consommation d'énergie"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 18,
+      "metadata": {
+        "id": "XtXC6cGUnLpK"
+      },
+      "outputs": [],
+      "source": [
+        "# Données\n",
+        "puissance_appareil = 30  # Puissance de l'appareil en watts\n",
+        "temps_utilisation_heures = 4  # Temps d'utilisation en heures par jour"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 19,
+      "metadata": {
+        "id": "_V2F75BWnLpL"
+      },
+      "outputs": [],
+      "source": [
+        "# Calcul de la consommation d'énergie quotidienne en kilowatt-heures (kWh)\n",
+        "# La division par 1000 est nécessaire pour convertir la puissance de l'appareil (exprimée en watts) en kilowatts,\n",
+        "# car 1 kilowatt équivaut à 1000 watts.\n",
+        "consommation_quotidienne_kWh = (puissance_appareil * temps_utilisation_heures) / 1000"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 20,
+      "metadata": {
+        "id": "gbXyVo-ZnLpL",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8573c5e8-0475-4ae6-cd10-79b6d0348d31"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "La consommation d'énergie quotidienne de l'appareil est de 0.12 kWh.\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Afficher le résultat\n",
+        "print(\"La consommation d'énergie quotidienne de l'appareil est de\", consommation_quotidienne_kWh, \"kWh.\")"
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
